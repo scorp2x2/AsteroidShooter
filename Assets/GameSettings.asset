@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8cf64f077e593e4486812155850951b, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: 
+  Player:
+    MoveHandler:
+      MoveSpeed: 10
+      Offset: 50
+    ShootHandler:
+      BulletSpeed: 15
+      ShootInterval: 0.08
+      damageGun: 30
+      damageLaser: 10
+    Settings:
+      MaxHp: 200
+  Asteroid:
+    SpawnSettings:
+      Speed: {x: 100, y: 1000}
+      HP: {x: 100, y: 400}
+      Damage: {x: 25, y: 50}
+      MaxCountAsteroids: 50
+      NumEnemiesStartAmount: 1
+      DelaySpawns: 0.5
+  GISettings:
+    AsteroidPrefab: {fileID: 5907341045665138360, guid: 5a44d05644da00448b1c2eaa9d5cc045,
+      type: 3}
+    BulletPrefab: {fileID: 723090542298848116, guid: e386ac55b947cfb4fbbb4c1688ee7d3e,
+      type: 3}
+    LaserPrefab: {fileID: 723090542298848116, guid: 947865e16edfe3d4d849ce2aa94d6d54,
+      type: 3}
